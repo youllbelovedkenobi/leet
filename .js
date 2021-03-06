@@ -24,7 +24,7 @@ function rip(x,rip) {
 4: Unicode (Ʊ₪ᵻ¢ɵↁ€)
 ________________
 5: Greek (Grεεκ)
-6: Flip (dᴉʃℲ)
+6: Flip (dᴉןℲ)
 7: Small Caps (Sᴍᴀʟʟ Cᴀᴘs)
 8: Mirror (ɿɿoɿiM)
 
@@ -43,6 +43,28 @@ ________________
 19: Symbolic Text (💲🍸〽🅱⚽👢🎐🌜 🌴🌛❎🌴)
 */
 let l = 6
+function toLeet1L() {
+    x = replaceAll(x,"a","4")
+    x = replaceAll(x,"b","8")
+    x = replaceAll(x,"e","3")
+    x = replaceAll(x,"g","9")
+    x = replaceAll(x,"i","1")
+    x = replaceAll(x,"o","0")
+    x = replaceAll(x,"r","2")
+    x = replaceAll(x,"s","5")
+    x = replaceAll(x,"t","7")
+    x = replaceAll(x,"z","2")
+    x = replaceAll(x,"A","4")
+    x = replaceAll(x,"B","8")
+    x = replaceAll(x,"E","3")
+    x = replaceAll(x,"G","9")
+    x = replaceAll(x,"I","1")
+    x = replaceAll(x,"O","0")
+    x = replaceAll(x,"R","2")
+    x = replaceAll(x,"S","5")
+    x = replaceAll(x,"T","7")
+    x = replaceAll(x,"Z","2")
+}
 function toLeet2L() {
     x = replaceAll(x,"A","4")
     x = replaceAll(x,"B","8")
@@ -321,7 +343,7 @@ function toLeet6L() {
     x = replaceAll(x,"♥","u")
     x = replaceAll(x,"♦","W")
     x = replaceAll(x,"1","⇂")
-    x = replaceAll(x,"2","↊")
+    x = replaceAll(x,"2","ᘔ")
     x = replaceAll(x,"3","Ɛ")
     x = replaceAll(x,"4","ᔭ")
     x = replaceAll(x,"5","ϛ")
