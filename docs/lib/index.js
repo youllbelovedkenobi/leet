@@ -1,20 +1,12 @@
-const readline = require('readline');
-console.clear
-let x
-let y
 function replaceAll(x, from, to) {
     return x.split(from).join(to)
 }
-const cl = readline.createInterface(process.stdin, process.stdout);
-const ask = (q) => new Promise((accept) => {
-    cl.question(q, answer => {
-        accept(answer);
-    });
-});
+
 function reverse(x) {
     return x.split("").reverse("").join("")
 }
-function rip(x,rip) {
+
+function rip(x, rip) {
     return x.split("").join(rip)
 }
 /*
@@ -43,7 +35,7 @@ ________________
 19: Symbolic Text (💲🍸〽🅱⚽👢🎐🌜 🌴🌛❎🌴)
 */
 let l = 6
-function toLeet1L() {
+function toLeet1L(x) {
     x = replaceAll(x,"a","4")
     x = replaceAll(x,"b","8")
     x = replaceAll(x,"e","3")
@@ -64,6 +56,7 @@ function toLeet1L() {
     x = replaceAll(x,"S","5")
     x = replaceAll(x,"T","7")
     x = replaceAll(x,"Z","2")
+    return x;
 }
 function toLeet2L() {
     x = replaceAll(x,"A","4")
@@ -1005,7 +998,7 @@ function toLeet19L() {
     x = replaceAll(x,"z","💤")
     return x
 }
-function showLeet() {
+function showLeet(x) {
     if (l == 1) {
         x = toLeet1L()
     }

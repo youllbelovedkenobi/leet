@@ -1,2 +1,18 @@
 <!DOCTYPE html>
-<body>HELO2</body>
+<html>
+    <body>
+        <input id="in" type="text"></input>
+        <button id="translateBtn">Translate</button>
+        <script src="lib/index.js"></script>
+        <div id="out"></div>
+        <script>
+            document
+                .getElementById("translateBtn")
+                .addEventListener("click", (ev) => {
+                    const textIn = document.getElementById("in").value;
+                    const textOut = toLeet1L(textIn);
+                    document.getElementById("out").textContent = textOut;
+                });
+        </script>    
+    </body>
+</html>
